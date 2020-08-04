@@ -1,0 +1,26 @@
+footer {
+    z-index: 200;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background: var(--primary-charcoal);
+    color: var(--primary-lb);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 2px;
+}
+
+footer a {
+    color: var(--accent-yellow)
+}
+
+footer a:hover {
+    color: var(--primary-lg)
+}

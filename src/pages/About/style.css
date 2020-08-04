@@ -1,0 +1,32 @@
+#kgl-portrait {
+    float: left;
+    word-wrap: break-word;
+    margin: 0px 50px 20px 0px;
+}
+
+#kalo-transparent-bg {
+    transform: scaleX(-1);
+    height: 500px;
+    float: right;
+    word-wrap: break-word;
+    margin: 0px 0px 20px 0px;
+}
+
+#about p {
+    text-align: left;
+}
+
+#signature-block {
+    display: block;
+    height: max-content;
+    margin: 20px;
+}
+
+#signature-block::after {
+    clear: both;
+    display: block;
+}
+
+#kgl-sig {
+    display: block;
+}
