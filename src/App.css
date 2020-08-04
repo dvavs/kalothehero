@@ -1,23 +1,52 @@
 .App {
+  --primary-lb: #e6eef0;
+  --primary-db: #4a7079;
+  --primary-charcoal: #282c34;
+  --primary-lg: #ccced0;
+  --accent-red: #a2322b;
+  --accent-yellow: #f2db73;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  background-color: var(--primary-lg);
+  
+}
+
+main {
+  padding: 50px;
+  margin: 75px 200px;
+  display: block;
+  position: relative;
+  background-color: var(--primary-lb);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--primary-charcoal);
+  box-shadow: 0px 10px 20px #00000020;
+  border-radius: 10px
 }
 
-.App-link {
-  color: #61dafb;
+main h1 {
+  margin-bottom: 50px;
+}
+
+main p {
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+main a {
+  color: var(--primary-db);
+}
+
+main a:hover, main a:visited:hover {
+  color: var(--accent-red);
+}
+
+#pad {
+  height: 72px;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
 }

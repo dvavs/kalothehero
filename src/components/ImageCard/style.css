@@ -1,0 +1,9 @@
+
+.image-card {
+    margin: 10%;
+    max-width: 80%;
+}
+
+.image-card img {
+    max-width: 300px;
+}
