@@ -19,7 +19,7 @@ export default function Resources(props) {
             <h3>Worksheets</h3>
             <p>Click the links below for printable forms to track your progress on the Kalo challenge!</p>
             <p>
-                <a href={challengeSignup} alt='challenge certificate' rel='noopener noreferrer' target='_blank' className='worksheet-link'>Challenge certificate</a>
+                <a href={challengeSignup} alt='challenge certificate' rel='noopener noreferrer' target='_blank' className='worksheet-link'>Challenge pledge certificate</a>
                 <br />
                 <a href={challengeChecklist} alt='challenge checklist' rel='noopener noreferrer' target='_blank' className='worksheet-link'>Challenge checklist</a>
             </p>
