@@ -42,7 +42,7 @@ main a:hover, main a:visited:hover {
   color: var(--accent-red);
 }
 
-#pad {
+.pad {
   height: 72px;
   width: 100%;
 }

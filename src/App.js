@@ -21,7 +21,7 @@ function App() {
       <Router>
         <PageCtxProvider>
           <Nav />
-          <div id='pad' />
+          <div className='pad' />
           <Switch>
             <Route exact path='/' component={() => <Home />} />
             <Route exact path='/about' component={() => <About />} />
@@ -30,7 +30,7 @@ function App() {
             <Route exact path='/media' component={() => <Media />} />
             <Route component={() => <NotFound />} />
           </Switch>
-          <div id='pad' />
+          <div className='pad' />
           <Footer />
         </PageCtxProvider>
       </Router>

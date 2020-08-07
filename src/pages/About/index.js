@@ -6,7 +6,7 @@ import './style.css'
 
 import kglPortrait from '../../assets/images/kgl/kgl-portrait.png'
 import kglSig from '../../assets/images/kgl/kgl-sig.png'
-import kalo from '../../assets/images/fullsize/kalo-large-transparent.png'
+import kalo from '../../assets/images/kalo-large-transparent.png'
 
 export default function About(props) {
 
