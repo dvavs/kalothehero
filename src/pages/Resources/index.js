@@ -26,28 +26,6 @@ export default function Resources(props) {
                         <sub id='rsrc-title-sub'>Click the thumbnails below for full-size images.</sub>
                     </Col>
                 </Row>
-                <Row id='lg-rsrc-set'>
-                    <Col size='lg-6'>
-                        <h3>Printable Poster</h3>
-                        <ResponsiveImage
-                            desc={poster.desc}
-                            default={poster.full}
-                            isLink={true}
-                            target={poster.full}
-                            imgSet={poster.imgSet}
-                        />
-                    </Col>
-                    <Col size='lg-6'>
-                        <h3>Digital Banner</h3>
-                        <ResponsiveImage
-                            desc={social.banner.desc}
-                            default={social.banner.full}
-                            isLink={true}
-                            target={social.banner.full}
-                            imgSet={social.banner.imgSet}
-                        />
-                    </Col>
-                </Row>
                 <Row>
                     <Col size='12'>
                         <h3>Shareable Digital Resources</h3>
@@ -87,10 +65,30 @@ export default function Resources(props) {
                         />
                     </Col>
                 </Row>
-                <section>
-
-                </section>
-
+                <Row id='lg-banner-row'>
+                    <Col size='12'>
+                        <h3>Digital Banner</h3>
+                        <ResponsiveImage
+                            desc={social.banner.desc}
+                            default={social.banner.full}
+                            isLink={true}
+                            target={social.banner.full}
+                            imgSet={social.banner.imgSet}
+                        />
+                    </Col>
+                </Row>
+                <Row id='lg-poster-row'>
+                    <Col size='12'>
+                        <h3>Printable Poster</h3>
+                        <ResponsiveImage
+                            desc={poster.desc}
+                            default={poster.full}
+                            isLink={true}
+                            target={poster.full}
+                            imgSet={poster.imgSet}
+                        />
+                    </Col>
+                </Row>
             </Container>
         </main>
     );
