@@ -5,7 +5,7 @@ import { PageCtx } from '../../utils/PageCtx'
 
 import './style.css'
 
-import kalo from '../../assets/images/fullsize/kalo-mask-closeup.jpg'
+import kalo from '../../assets/images/kalo-mask-closeup.jpg'
 
 export default function Nav(props) {
     const { page } = React.useContext(PageCtx)

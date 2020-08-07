@@ -4,7 +4,7 @@ import { PageCtx } from '../../utils/PageCtx'
 
 import './style.css'
 
-import kalo from '../../assets/images/fullsize/kalo-intro.jpg'
+import kalo from '../../assets/media/social/kalo-follow.jpg'
 
 export default function Home(props) {
 
