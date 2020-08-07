@@ -1,19 +1,20 @@
-h3 {
+#resources h3 {
     margin: 50px 0px 0px
 }
-Col {
+
+#resources Col {
     padding: 10%;
 }
 
-#rsrc-title {
+#resources #rsrc-title {
     margin-bottom: 5px;
 }
 
-sub {
+#resources sub {
     margin-bottom: 100px;
 }
 
-img {
+#resources img {
     max-width: 80%;
     margin-top: 20px
 }
