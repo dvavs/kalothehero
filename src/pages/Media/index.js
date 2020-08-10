@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { PageCtx } from '../../utils/PageCtx'
+import MediaMention from '../../components/MediaMention'
+
+import sciAmScreenshot from '../../assets/images/scientific-american.jpg'
 
 export default function Media(props) {
 
@@ -9,13 +12,15 @@ export default function Media(props) {
 
     return (
         <main id='media'>
-            <h1>Social Media</h1>
-            <p>Follow Kalo on <a href='https://www.facebook.com/Kalo-the-Hero-626785261278776'>Facebook</a>!</p>
-            <br />
             <h1>Media Highlights</h1>
-            <p>
-                Coming soon!
-            </p>
+        <MediaMention
+            url='https://www.scientificamerican.com/article/can-a-cartoon-raccoon-keep-schoolkids-safe-from-covid-19/'
+            title='Can a Cartoon Raccoon Keep Schoolkids Safe from COVID-19?'
+            outlet='Scientific American'
+            author='Dr. Kelly Lambert'
+            publishDate='8/4/2020'
+            screenshot={sciAmScreenshot}
+        />
         </main>
     );
 }
