@@ -1,4 +1,5 @@
 import React from 'react';
+import onClickOutside from "react-onclickoutside";
 import { Link } from 'react-router-dom';
 
 import { PageCtx } from '../../utils/PageCtx'
@@ -7,16 +8,29 @@ import './style.css'
 
 import kalobanner from '../../assets/images/kalo-web-header_200x700.png'
 
-export default function Nav(props) {
+function Nav(props) {
+
     const { page } = React.useContext(PageCtx)
+
+    Nav.closeDdNav = () => {
+        props.closeDdNav()
+    }
+
+    const closeDdNav = () => {
+        props.closeDdNav()
+    }
+
+    const toggleNav = () => {
+        props.toggleNav()
+    }
 
     return (
         <nav>
-            <div id='nav'>
-                <div id='nav-left'>
-                    <Link to='/'><img src={kalobanner} alt='kalo' /></Link>
+            <div id='nav-full'>
+                <div className='nav-left'>
+                    <Link to='/'><img src={kalobanner} alt='kalo' id='kalo-header' /></Link>
                 </div>
-                <div id='nav-center'>
+                <div className='nav-center'>
                     <Link to='/about' className='nav-block'>
                         <div className={page === `about` ? 'nav-btn-active' : 'nav-btn'}>
                             <p>About Kalo</p>
@@ -45,11 +59,65 @@ export default function Nav(props) {
                         </div>
                     </Link>
                 </div>
-                <div id='nav-right'>
+                <div className='nav-right'>
                     <a href='https://www.facebook.com/KaloTheHero/' className='nav-block'>
                         <i className='fab fa-facebook-square nav-btn' id='fbook-icon'></i>
                     </a>
+                </div>
             </div>
+            <div id='nav-collapsable'>
+                <div id='nav-collapse-bar'>
+                    <div className='nav-left'>
+                        <Link to='/'><img src={kalobanner} alt='kalo' id='kalo-collapse-header' /></Link>
+                    </div>
+                    <div className='nav-center'></div>
+                    <div className='nav-right'>
+                        <a href='https://www.facebook.com/KaloTheHero/' className='nav-block' id='fbook-link'>
+                            <i className='fab fa-facebook-square nav-btn' id='fbook-icon'></i>
+                        </a>
+                        <button id='nav-menu-toggle-btn' onClick={toggleNav}>
+                            <i className={props.ddOpen ? 'fa fa-angle-double-up nav-btn' : 'fa fa-angle-double-down nav-btn'} id='nav-collapse-icon'></i>
+                        </button>
+                    </div>
+                </div>
+                <div id='nav-collapse-menu'>
+                    <ul id={props.ddOpen ? 'nav-visible-ul' : 'nav-collapsed-ul'}>
+                        <li>
+                            <Link to='/about' className='nav-block' onClick={closeDdNav} id='about-top-nav-dd-btn'>
+                                <div className={page === `about` ? 'nav-btn-active' : 'nav-btn'}>
+                                    <p>About Kalo</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/resources' className='nav-block' onClick={closeDdNav}>
+                                <div className={page === `resources` ? 'nav-btn-active' : 'nav-btn'}>
+                                    <p>Resources</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/challenge' className='nav-block' onClick={closeDdNav}>
+                                <div className={page === `challenge` ? 'nav-btn-active' : 'nav-btn'}>
+                                    <p>Take the Challenge!</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/media' className='nav-block' onClick={closeDdNav}>
+                                <div className={page === `media` ? 'nav-btn-active' : 'nav-btn'}>
+                                    <p>Media</p>
+                                </div>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav >)
 }
+
+const clickOutsideConfig = {
+    handleClickOutside: () => Nav.closeDdNav
+};
+
+export default onClickOutside(Nav, clickOutsideConfig);

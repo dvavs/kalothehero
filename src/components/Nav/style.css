@@ -9,17 +9,20 @@ nav {
     box-shadow: 0px 6px 12px #00000020;
 }
 
-#nav {
+#nav-full, #nav-collapse-bar  {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
     top: 0;
-    width: 1400px;
     margin-left: auto;
     margin-right: auto;
     transition: 0.25s ease-out;
+}
+
+#nav-full {
+    width: 1400px;
 }
 
 nav::after {
@@ -27,16 +30,16 @@ nav::after {
     display: block;
 }
 
-#nav-left {
+.nav-left {
     width: max-content;
     padding: 6px 6px 6px 0px;
 }
 
-#nav-left img {
+.nav-left img {
     max-height: 60px;
 }
 
-#nav-center {
+.nav-center {
     width: 100%;
     padding: 12px 100px 12px 0px;
     line-height: 1;
@@ -52,7 +55,7 @@ nav::after {
     width: 36px;
 }
 
-#nav-right {
+.nav-right {
     display: flex;
     flex-wrap: nowrap;
     padding: 12px 0px 12px 12px;
@@ -108,4 +111,105 @@ nav::after {
 #fbook-icon {
     font-size: 2em;
     padding: 10px
+}
+
+#nav-collapsable {
+    background: var(--primary-lg)
+}
+
+button {
+    border: none;
+    background: inherit;
+    font-size: 2em;
+    max-height: 48px;
+}
+
+button:active, button:focus {
+    outline: none;
+    border: none;
+}
+
+#nav-collapse-menu {
+    background: inherit;
+}
+
+#nav-collapsed-ul {
+    height: 0;
+    display: none;
+}
+
+#nav-collapse-menu li .nav-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    border-bottom: var(--primary-db) solid 1px;
+}
+
+#about-top-nav-dd-btn {
+    border-top: var(--primary-db) solid 1px;
+}
+
+#fbook-icon-dd-nav {
+    font-size: 1em;
+}
+
+#fbook-link, #nav-menu-toggle-btn {
+    margin: 0px 20px;
+}
+
+@media screen and (max-width: 1399px) {
+
+    #nav-full {
+        width: 960px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .nav-center {
+        padding: 12px 0px 12px 0px;
+    }
+
+    #nav-full {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+
+    #nav-collapsable {
+        height: 0;
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 839px) {
+
+    nav {
+        background: var(--primary-lg);
+        box-shadow: 0px 6px 12px #00000020;
+    }
+
+    #nav-full {
+        height: 0;
+        display: none;
+    }
+    
+    #nav-collapse-bar .nav-btn:hover,
+    #nav-collapse-bar .nav-btn:focus,
+    #nav-collapse-bar .nav-btn:active,
+    #nav-collapse-bar .nav-btn-active {
+        color: var(--accent-red);
+    }
+    
+    .nav-btn-active:hover {
+        width: 100%;
+        background: var(--primary-lg);
+    }
+
 }
