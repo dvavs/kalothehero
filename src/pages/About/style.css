@@ -36,13 +36,6 @@
     display: block;
 }
 
-@media screen and (max-width: 1000px) {
-    #about {
-        margin: 0% 10%;
-        width: 80%;
-    }
-}
-
 @media screen and (max-width: 719px) {
 
     #kalo-transparent-bg {
@@ -60,7 +53,7 @@
 @media screen and (max-width: 679px) {
 
     #about {
-      margin: 0% 5%;
+      margin-left: 5%;
       width: 90%
     }
 
