@@ -9,10 +9,39 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1399px) {
+
+    #home {
+        margin: 75px 300px;
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+
+    #home {
+        margin: 75px 200px;
+    }
+
+}
+
 @media screen and (max-width: 839px) {
 
     #home {
         margin: 75px 0px;
     }
+
+    #kalo-home-img {
+        max-width: 80%;
+        margin: 0% 10%;
+    }
     
+}
+
+@media screen and (max-width: 480px) {
+
+    #kalo-home-img {
+        max-width: 90%;
+        margin: 0% 5%;
+    }
 }

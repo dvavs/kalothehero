@@ -213,3 +213,19 @@ button:active, button:focus {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+
+    #fbook-link {
+        margin: 0px 5px;
+    }
+
+    #nav-menu-toggle-btn {
+        margin: 0px 10px 0px 5px
+    }
+
+    .nav-right {
+        padding: 12px 0px;
+    }
+
+}

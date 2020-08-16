@@ -24,3 +24,21 @@ footer a {
 footer a:hover {
     color: var(--primary-lg)
 }
+
+p div {
+    display: inline;
+}
+
+@media screen and (max-width: 540px) {
+    footer {
+        height: 80px;
+    }
+
+    p div {
+        display: block;
+    }
+
+    #tag-pipe {
+        display: none;
+    }
+}
