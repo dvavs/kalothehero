@@ -15,27 +15,54 @@ import Footer from './components/Footer'
 
 import './App.css';
 
-function App() {
-  return (
-    <div className='App'>
-      <Router>
-        <PageCtxProvider>
-          <Nav />
-          <div className='pad' />
-          <Switch>
-            <Route exact path='/' component={() => <Home />} />
-            <Route exact path='/about' component={() => <About />} />
-            <Route exact path='/resources' component={() => <Resources />} />
-            <Route exact path='/challenge' component={() => <Challenge />} />
-            <Route exact path='/media' component={() => <Media />} />
-            <Route component={() => <NotFound />} />
-          </Switch>
-          <div className='pad' />
-          <Footer />
-        </PageCtxProvider>
-      </Router>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor() {
+    super()
+
+    this.state = {
+      ddOpen: false
+    }
+
+    this.closeDdNav = () => {
+      this.setState({
+        ddOpen: false
+      })
+    }
+  
+    this.toggleDdNav = () => {
+      this.setState(prevState => ({
+        ddOpen: !prevState.ddOpen
+      }))
+    }
+  }
+
+
+  render() {
+
+    const { ddOpen } = this.state
+
+    return (
+      <div className='App'>
+        <Router>
+          <PageCtxProvider>
+            <Nav toggleNav={this.toggleDdNav} closeDdNav={this.closeDdNav} ddOpen={ddOpen}/>
+            <div className='pad' />
+            <Switch>
+              <Route exact path='/' component={() => <Home />} />
+              <Route exact path='/about' component={() => <About />} />
+              <Route exact path='/resources' component={() => <Resources />} />
+              <Route exact path='/challenge' component={() => <Challenge />} />
+              <Route exact path='/media' component={() => <Media />} />
+              <Route component={() => <NotFound />} />
+            </Switch>
+            <div className='pad' />
+            <Footer />
+          </PageCtxProvider>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

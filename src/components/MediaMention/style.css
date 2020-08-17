@@ -11,7 +11,31 @@
     margin: 0;
 }
 
+.media-mention-header {
+    display: block;
+    text-align: left;
+  }
+
 .media-scrnsht {
     width: 100%;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .media-mention {
+        max-width: 90%;
+        margin: 0 5%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .media-mention {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
 }

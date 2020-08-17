@@ -12,6 +12,11 @@
     margin: 0px 0px 20px 0px;
 }
 
+#kgl-portrait::after, #kalo-transparent-bg::after {
+    display: block;
+    clear: both;
+}
+
 #about p {
     text-align: left;
 }
@@ -19,7 +24,7 @@
 #signature-block {
     display: block;
     height: max-content;
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 #signature-block::after {
@@ -29,4 +34,45 @@
 
 #kgl-sig {
     display: block;
+}
+
+@media screen and (max-width: 719px) {
+
+    #kalo-transparent-bg {
+        max-width: 50%;
+        height: auto;
+    }
+
+    #kgl-portrait {
+        max-width: 50%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 679px) {
+
+    #about {
+      margin-left: 5%;
+      width: 90%
+    }
+
+  }
+
+@media screen and (max-width: 540px) {
+
+    #kalo-transparent-bg, #kgl-portrait {
+        display: block;
+        word-wrap: normal;
+        float: none;
+        max-width: 80%;
+        width: 80%;
+        height: auto;
+        margin: 0% 10%;
+    }
+
+    #kgl-sig {
+        max-width: 60%;
+    }
+
 }
