@@ -1,5 +1,4 @@
 import React from 'react';
-import onClickOutside from "react-onclickoutside";
 import { Link } from 'react-router-dom';
 
 import { PageCtx } from '../../utils/PageCtx'
@@ -116,8 +115,4 @@ function Nav(props) {
         </nav >)
 }
 
-const clickOutsideConfig = {
-    handleClickOutside: () => Nav.closeDdNav
-};
-
-export default onClickOutside(Nav, clickOutsideConfig);
+export default Nav
