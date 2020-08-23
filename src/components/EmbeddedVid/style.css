@@ -1,0 +1,32 @@
+
+.embedded-vid-iframe {
+    border: 0;
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .embedded-vid-iframe {
+        height: 275px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .embedded-vid-iframe {
+        height: 225px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .embedded-vid-iframe {
+        height: 200px;
+    }
+
+}
