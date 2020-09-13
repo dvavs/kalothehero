@@ -7,7 +7,8 @@ import ResponsiveImage from '../../components/ResponsiveImg'
 
 import './style.css'
 
-const poster = require('../../assets/media/print/challenge-poster')
+const challengePoster = require('../../assets/media/print/challenge-poster')
+const vaccPoster = require('../../assets/media/print/vacc-poster')
 
 const social = require('../../assets/media/social')
 
@@ -79,14 +80,15 @@ export default function Resources(props) {
                 </Row>
                 <Row id='lg-poster-row'>
                     <Col size='12'>
-                        <h3>Printable Poster</h3>
+                        <h3>Printable Posters</h3>
                         <ResponsiveImage
-                            desc={poster.desc}
-                            default={poster.full}
+                            desc={challengePoster.desc}
+                            default={challengePoster.full}
                             isLink={true}
-                            target={poster.full}
-                            imgSet={poster.imgSet}
+                            target={challengePoster.full}
+                            imgSet={challengePoster.imgSet}
                         />
+                        <p><a href={vaccPoster.full} alt={vaccPoster.desc} target='_blank' rel='noopener noreferrer'>You can make the vaccine stronger!</a></p>
                     </Col>
                 </Row>
             </Container>
