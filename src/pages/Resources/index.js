@@ -33,7 +33,7 @@ export default function Resources(props) {
                     </Col>
                 </Row>
                 <Row id='sm-rsrc-set'>
-                    <Col size='md-6' id='sm-rsrc-left'>
+                    <Col size='md-6' className='sm-rsrc-left'>
                         <ResponsiveImage
                             desc={social.follow.desc}
                             default={social.follow.full}
@@ -49,7 +49,7 @@ export default function Resources(props) {
                             imgSet={social.physDist.imgSet}
                         />
                     </Col>
-                    <Col size='md-6' id='sm-rsrc-right'>
+                    <Col size='md-6' className='sm-rsrc-right'>
                         <ResponsiveImage
                             desc={social.washHands.desc}
                             default={social.washHands.full}
@@ -78,9 +78,13 @@ export default function Resources(props) {
                         />
                     </Col>
                 </Row>
-                <Row id='lg-poster-row'>
+                <Row>
                     <Col size='12'>
                         <h3>Printable Posters</h3>
+                    </Col>
+                </Row>
+                <Row id='lg-poster-row'>
+                    <Col size='md-6' className='sm-rsrc-left'>
                         <ResponsiveImage
                             desc={challengePoster.desc}
                             default={challengePoster.full}
@@ -88,6 +92,8 @@ export default function Resources(props) {
                             target={challengePoster.full}
                             imgSet={challengePoster.imgSet}
                         />
+                    </Col>
+                    <Col size='md-6' className='sm-rsrc-right'>
                         <ResponsiveImage
                             desc={vaccPoster.desc}
                             default={vaccPoster.full}
