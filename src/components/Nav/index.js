@@ -44,9 +44,9 @@ function Nav(props) {
                         </div>
                     </Link>
                     <div className='nav-center-break' />
-                    <Link to='/challenge' className='nav-block'>
-                        <div className={page === `challenge` ? 'nav-btn-active' : 'nav-btn'}>
-                            <p>Take the Challenge!</p>
+                    <Link to='/klassroom' className='nav-block'>
+                        <div className={page === `klassroom` ? 'nav-btn-active' : 'nav-btn'}>
+                            <p>Kalo's Klassroom</p>
                             <div className='nav-btn-line' />
                         </div>
                     </Link>
