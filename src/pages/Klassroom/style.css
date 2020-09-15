@@ -1,0 +1,26 @@
+.klassroom-txt {
+    padding: 20px 100px
+}
+
+#klassroom h3 {
+    margin: 50px 0px 0px
+}
+
+#klassroom Col {
+    padding: 10%;
+}
+
+#klassroom #rsrc-title {
+    margin-bottom: 5px;
+}
+
+#klassroom img {
+    max-width: 80%;
+    margin-top: 20px
+}
+
+@media screen and (max-width: 839px) {
+    .klassroom-txt {
+        padding: 5px 20px;
+    }
+}

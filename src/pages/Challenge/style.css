@@ -1,9 +1,0 @@
-#challenge {
-    padding: 100px
-}
-
-@media screen and (max-width: 839px) {
-    #challenge {
-        padding: 0px 20px;
-    }
-}

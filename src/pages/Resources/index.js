@@ -88,7 +88,13 @@ export default function Resources(props) {
                             target={challengePoster.full}
                             imgSet={challengePoster.imgSet}
                         />
-                        <p><a href={vaccPoster.full} alt={vaccPoster.desc} target='_blank' rel='noopener noreferrer'>You can make the vaccine stronger!</a></p>
+                        <ResponsiveImage
+                            desc={vaccPoster.desc}
+                            default={vaccPoster.full}
+                            isLink={true}
+                            target={vaccPoster.full}
+                            imgSet={vaccPoster.imgSet}
+                        />
                     </Col>
                 </Row>
             </Container>
