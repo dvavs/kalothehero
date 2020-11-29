@@ -24,3 +24,9 @@
         padding: 5px 20px;
     }
 }
+
+@media screen and (max-width: 599px) {
+    .home .site-header { 
+        margin-bottom: 0px;
+    }
+}
