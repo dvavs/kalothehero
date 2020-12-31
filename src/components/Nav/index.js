@@ -37,6 +37,13 @@ function Nav(props) {
                         </div>
                     </Link>
                     <div className='nav-center-break' />
+                    <Link to='/contest' className='nav-block'>
+                        <div className={page === `contest` ? 'nav-btn-active' : 'nav-btn'}>
+                            <p>Contest</p>
+                            <div className='nav-btn-line' />
+                        </div>
+                    </Link>
+                    <div className='nav-center-break' />
                     <Link to='/resources' className='nav-block'>
                         <div className={page === `resources` ? 'nav-btn-active' : 'nav-btn'}>
                             <p>Resources</p>
@@ -85,6 +92,13 @@ function Nav(props) {
                             <Link to='/about' className='nav-block' onClick={closeDdNav} id='about-top-nav-dd-btn'>
                                 <div className={page === `about` ? 'nav-btn-active' : 'nav-btn'}>
                                     <p>About Kalo</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contest' className='nav-block' onClick={closeDdNav}>
+                                <div className={page === `about` ? 'nav-btn-active' : 'nav-btn'}>
+                                    <p>Contest</p>
                                 </div>
                             </Link>
                         </li>

@@ -1,0 +1,16 @@
+#email-template {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+#copypasta-preview {
+    background: var(--primary-lg);
+    border: 5px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#copypasta-preview p {
+    font-size: 1em;
+}

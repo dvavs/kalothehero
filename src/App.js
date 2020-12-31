@@ -5,6 +5,7 @@ import { PageCtxProvider } from './utils/PageCtx'
 
 import Home from './pages/Home';
 import About from './pages/About';
+import Contest from './pages/Contest';
 import Resources from './pages/Resources';
 import Klassroom from './pages/Klassroom';
 import Media from './pages/Media';
@@ -51,6 +52,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path='/' component={() => <Home />} />
               <Route exact path='/about' component={() => <About />} />
+              <Route exact path='/contest' component={() => <Contest />} />
               <Route exact path='/resources' component={() => <Resources />} />
               <Route exact path='/klassroom' component={() => <Klassroom />} />
               <Route exact path='/media' component={() => <Media />} />

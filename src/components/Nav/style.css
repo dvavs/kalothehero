@@ -179,7 +179,11 @@ button:active, button:focus {
 
 }
 
-@media screen and (min-width: 840px) {
+/* 
+Reduce this to 840 (and the next to 839) after contest is over
+    - unless the contest page stays up to display the winner
+*/
+@media screen and (min-width: 860px) {
 
     #nav-collapsable {
         height: 0;
@@ -188,7 +192,7 @@ button:active, button:focus {
 
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 859px) {
 
     nav {
         background: var(--primary-lg);
