@@ -34,11 +34,11 @@ main p {
   margin: 20px 0px;
 }
 
-main a {
+main a, main i {
   color: var(--primary-db);
 }
 
-main a:hover, main a:visited:hover {
+main a:hover, main a:visited:hover, main i:hover, main i:visited:hover  {
   color: var(--accent-red);
 }
 
@@ -47,7 +47,7 @@ main a:hover, main a:visited:hover {
   width: 100%;
 }
 
-a:hover {
+a:hover, i:hover {
   text-decoration: none;
 }
 
