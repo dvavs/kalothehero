@@ -66,11 +66,13 @@ class ResponsiveImage extends React.Component {
     // If it's not a link, just return the img element itself
     else {
       return (
-        < img alt={this.props.desc}
-          src={this.props.default}
-          srcSet={this.srcSet}
-          sizes={this.sizeSet}
-          onLoad={this.onLoad} />
+        <div>
+          < img alt={this.props.desc}
+            src={this.props.default}
+            srcSet={this.srcSet}
+            sizes={this.sizeSet}
+            onLoad={this.onLoad} />
+        </div>
       )
     }
   }

@@ -3,6 +3,7 @@ import React from 'react';
 import { PageCtx } from '../../utils/PageCtx'
 import { Container, Row, Col } from '../../components/Grid'
 import ResponsiveImage from '../../components/ResponsiveImg'
+// import ContestMediaGrid from '../../components/ContestMediaGrid'
 import EmailTemplate from '../../components/EmailTemplate'
 
 import {
@@ -14,12 +15,13 @@ import {
 import './style.css'
 
 import lookFwd from '../../assets/files/kalo-activity-look-fwd'
-import tgPortrait from '../../assets/images/contestJudges/grandin'
+import tgPortrait from '../../assets/images/contest/grandin'
+import kaloPortrait from '../../assets/images/contest/kalo'
 
 
 export default function About(props) {
 
-    const shareUrl='https://www.kalothehero.com/contest'
+    const shareUrl = 'https://www.kalothehero.com/contest'
 
     const { checkPage } = React.useContext(PageCtx);
     React.useEffect(() => { checkPage(); });
@@ -54,18 +56,10 @@ export default function About(props) {
                         </p>
                     </Col>
                 </Row>
-                <Row id='contest-desc-media'>
-                    <Col size='md-6' id='desc-media-left'>
-                        <ResponsiveImage
-                            desc={tgPortrait.desc}
-                            default={tgPortrait.full}
-                            isLink={true}
-                            target='https://www.templegrandin.com/'
-                            imgSet={tgPortrait.imgSet}
-                        />
-                        <sub id='rsrc-sub'>Dr. Temple Grandin</sub>
-                    </Col>
-                    <Col size='md-6' id='desc-media-right'>
+                {/* <ContestMediaGrid judge='tg'/> */}
+                <Row id='contest-desc-media-top'>
+                    <Col size='md-2' className='desc-media-lg-buffer' />
+                    <Col size='md-8' id='desc-media-lg'>
                         <ResponsiveImage
                             desc={lookFwd.desc}
                             default={lookFwd.full}
@@ -75,6 +69,30 @@ export default function About(props) {
                         />
                         <sub id='rsrc-sub'>Click the thumbnail above for full-size.</sub>
                     </Col>
+                    <Col size='md-2' className='desc-media-lg-buffer' />
+                </Row>
+                <Row id='contest-desc-media-bottom'>
+                <Col size='md-1' />
+                    <Col size='md-5 6' id='desc-media-sm-left'>
+                        <ResponsiveImage
+                            desc={kaloPortrait.desc}
+                            default={kaloPortrait.full}
+                            isLink={false}
+                            imgSet={kaloPortrait.imgSet}
+                        />
+                        <sub id='rsrc-sub'>{kaloPortrait.desc}</sub>
+                    </Col>
+                    <Col size='md-5 6' id='desc-media-sm-right'>
+                        <ResponsiveImage
+                            desc={tgPortrait.desc}
+                            default={tgPortrait.full}
+                            isLink={true}
+                            target='https://www.templegrandin.com/'
+                            imgSet={tgPortrait.imgSet}
+                        />
+                        <sub id='rsrc-sub'>{tgPortrait.desc}</sub>
+                    </Col>
+                    <Col size='md-1' />
                 </Row>
                 <hr className='row-buffer' />
                 <Row>

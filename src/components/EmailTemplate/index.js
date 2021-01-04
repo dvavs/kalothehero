@@ -13,7 +13,7 @@ class EmailTemplate extends React.Component {
     render() {
         return (
             <div id='email-template'>
-                <CopyToClipboard text={'1. Your name:\n\n2. Your age or grade:\n\n3. Name of your school or educational setting:\n\n4. Parent or Guardian name and email address (where you can be reached):\n\n5. If selected, do we have permission to use submitted images on the Kalo the Hero website and related media to promote Kalo’s recommendations for healthy COVID behaviors?\n\nDon\'t forget to attach your pictures!'}
+                <CopyToClipboard text={'1. Your name:\n\n2. Your age and grade:\n\n3. Name and address of your school (or educational setting):\n\n4. Parent or Guardian name and email address (where you can be reached):\n\n5. If selected, do we have permission to use submitted images on the Kalo the Hero website and related media to promote Kalo’s recommendations for healthy COVID behaviors?\n\nDon\'t forget to attach your pictures!'}
                     onCopy={() => this.setState({ copied: true })
                     }>
                     <button id='btn-copypasta'><i class={this.state.copied ? 'fas fa-copy' : 'far fa-copy'} /></button>
@@ -26,10 +26,10 @@ class EmailTemplate extends React.Component {
                         1. Your name:
                             </p>
                     <p>
-                        2. Your age or grade:
+                        2. Your age and grade:
                             </p>
                     <p>
-                        3. Name of your school or educational setting:
+                        3. Name and address of your school (or educational setting):
                             </p>
                     <p>
                         4. Parent or Guardian name and email address (where you can be reached):
