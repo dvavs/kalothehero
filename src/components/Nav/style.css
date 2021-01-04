@@ -9,6 +9,10 @@ nav {
     box-shadow: 0px 6px 12px #00000020;
 }
 
+nav ul {
+    list-style: none;
+}
+
 #nav-full, #nav-collapse-bar  {
     position: relative;
     display: flex;
