@@ -9,10 +9,6 @@ nav {
     box-shadow: 0px 6px 12px #00000020;
 }
 
-nav ul {
-    list-style: none;
-}
-
 #nav-full, #nav-collapse-bar  {
     position: relative;
     display: flex;
@@ -197,6 +193,12 @@ Reduce this to 840 (and the next to 839) after contest is over
 }
 
 @media screen and (max-width: 859px) {
+
+
+    nav ul {
+        list-style: none;
+        padding-inline-start: 0;
+    }
 
     nav {
         background: var(--primary-lg);
