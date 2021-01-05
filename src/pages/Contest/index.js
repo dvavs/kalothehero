@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { PageCtx } from '../../utils/PageCtx'
-import HelmetMetaData from '../../components/HelmetMetaData'
 
 import { Container, Row, Col } from '../../components/Grid'
 import ResponsiveImage from '../../components/ResponsiveImg'
@@ -29,12 +28,6 @@ export default function About(props) {
 
     return (
         <main id='contest'>
-            <HelmetMetaData
-                description={'Kalo the Raccoon is looking forward to getting the vaccine and seeing life go back to normal.' +
-                    'After all, anticipating fun events is good for our brain!' +
-                    'Help Kalo get ideas by entering the Kalo’s Plan Contest with your creative poem or picture and you’ll have a chance to win books for your class!'}
-                title='What are you looking forward to doing when things get back to normal after the Pandemic?'
-            />
             <Container fluid>
                 <Row id='contest-title'>
                     <Col size='12'>
