@@ -10,9 +10,9 @@ export function PageCtxProvider({ children }) {
   /** Function to check which page is active to render the page properly */
   const checkPage = () => {
     if (window.location.pathname === `/`) setPage(`home`);
-    else if (window.location.pathname === `/home`) setPage(`home`);
     else if (window.location.pathname === `/about`) setPage(`about`);
-    else if (window.location.pathname === `/challenge`) setPage(`challenge`);
+    else if (window.location.pathname === `/contest`) setPage(`contest`);
+    else if (window.location.pathname === `/klassroom`) setPage(`klassroom`);
     else if (window.location.pathname === `/media`) setPage(`media`);
     else if (window.location.pathname === `/resources`) setPage(`resources`);
     else setPage(`NotFound`);
