@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { PageCtx } from '../../utils/PageCtx'
+import HelmetMetaData from '../../components/HelmetMetaData'
+
 import { Container, Row, Col } from '../../components/Grid'
 import ResponsiveImage from '../../components/ResponsiveImg'
-// import ContestMediaGrid from '../../components/ContestMediaGrid'
 import EmailTemplate from '../../components/EmailTemplate'
 
 import {
@@ -28,6 +29,12 @@ export default function About(props) {
 
     return (
         <main id='contest'>
+            <HelmetMetaData
+                description={'Kalo the Raccoon is looking forward to getting the vaccine and seeing life go back to normal.' +
+                    'After all, anticipating fun events is good for our brain!' +
+                    'Help Kalo get ideas by entering the Kalo’s Plan Contest with your creative poem or picture and you’ll have a chance to win books for your class!'}
+                title='What are you looking forward to doing when things get back to normal after the Pandemic?'
+            />
             <Container fluid>
                 <Row id='contest-title'>
                     <Col size='12'>
@@ -72,7 +79,7 @@ export default function About(props) {
                     <Col size='md-2' className='desc-media-lg-buffer' />
                 </Row>
                 <Row id='contest-desc-media-bottom'>
-                <Col size='md-1' />
+                    <Col size='md-1' />
                     <Col size='md-5 6' id='desc-media-sm-left'>
                         <ResponsiveImage
                             desc={kaloPortrait.desc}
@@ -123,21 +130,21 @@ export default function About(props) {
                                 6. Encourage your friends to join the competition!
                                 <br />
                                 <FacebookShareButton
-                                    quote='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
-                                    hashtag='#kalotheraccoon'
+                                    // quote='Kalo the Raccoon wants to hear about your post-pandemic plans!'
+                                    // hashtag='#kalotheraccoon'
                                     url={shareUrl}>
                                     <i className='fab fa-facebook-square social-share-icon' />
                                 </FacebookShareButton>
                                 <TwitterShareButton
-                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
-                                    hashtags={['kalotheraccoon', 'postpandemic', 'covid19']}
+                                    // title='Kalo the Raccoon wants to hear about your post-pandemic plans!'
+                                    // hashtags={['kalotheraccoon', 'postpandemic', 'covid19']}
                                     url={shareUrl}>
-                                    <i class='fab fa-twitter-square social-share-icon' />
+                                    <i className='fab fa-twitter-square social-share-icon' />
                                 </TwitterShareButton>
                                 <WhatsappShareButton
-                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
+                                    // title='Kalo the Raccoon wants to hear about your post-pandemic plans!'
                                     url={shareUrl}>
-                                    <i class='fab fa-whatsapp-square social-share-icon' />
+                                    <i className='fab fa-whatsapp-square social-share-icon' />
                                 </WhatsappShareButton>
                             </p>
                         </section>
