@@ -123,19 +123,19 @@ export default function About(props) {
                                 6. Encourage your friends to join the competition!
                                 <br />
                                 <FacebookShareButton
-                                    quote='Kalo the Raccoon wants to hear about your post-pandemic plans!'
+                                    quote='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
                                     hashtag='#kalotheraccoon'
                                     url={shareUrl}>
                                     <i className='fab fa-facebook-square social-share-icon' />
                                 </FacebookShareButton>
                                 <TwitterShareButton
-                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans!'
+                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
                                     hashtags={['kalotheraccoon', 'postpandemic', 'covid19']}
                                     url={shareUrl}>
                                     <i className='fab fa-twitter-square social-share-icon' />
                                 </TwitterShareButton>
                                 <WhatsappShareButton
-                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans!'
+                                    title='Kalo the Raccoon wants to hear about your post-pandemic plans. Enter the contest to win!'
                                     url={shareUrl}>
                                     <i className='fab fa-whatsapp-square social-share-icon' />
                                 </WhatsappShareButton>
