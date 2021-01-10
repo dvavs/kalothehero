@@ -52,7 +52,7 @@ export default function About(props) {
                             There are two age groups: 6-8 years old and 9-11 years old.
                             </p>
                         <p>
-                            <b>Send us your ideas by January 25!</b>
+                            <b>Send us your ideas by Februay 5!</b>
                         </p>
                     </Col>
                 </Row>
