@@ -25,7 +25,7 @@ import kaloPortrait from '../../assets/images/contest/kalo'
 class Contest extends React.Component {
 
     state = {
-        lang: this.props.i18n.language,
+        lang: this.props.i18n.language ==='ar' ? 'ar' : 'en',
         t: this.props.t,
         i18n: this.props.i18n
     };

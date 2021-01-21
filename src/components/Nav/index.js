@@ -97,7 +97,7 @@ function Nav(props) {
                         </li>
                         <li>
                             <Link to='/contest' className='nav-block' onClick={closeDdNav}>
-                                <div className={page === `about` ? 'nav-btn-active' : 'nav-btn'}>
+                                <div className={page === `contest` ? 'nav-btn-active' : 'nav-btn'}>
                                     <p>Contest</p>
                                 </div>
                             </Link>
