@@ -117,14 +117,14 @@ nav::after {
     background: var(--primary-lg)
 }
 
-button {
+#nav-collapse-bar button {
     border: none;
     background: inherit;
     font-size: 2em;
     max-height: 48px;
 }
 
-button:active, button:focus {
+#nav-collapse-bar button:active, button:focus {
     outline: none;
     border: none;
 }

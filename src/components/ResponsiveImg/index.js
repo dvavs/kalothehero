@@ -17,48 +17,50 @@ import './style.css'
  */
 class ResponsiveImage extends React.Component {
 
-  constructor(props) {
-    super(props)
-
-    this.isImgLink = props.isLink
-
+  setImgParams(imgSet) {
     // Create a set of image sources and actual width values
-    this.srcSet = props.imgSet.map(img => {
+    const srcSet = imgSet.map(img => {
       return `${img.imgSrc} ${img.width}w`
     }).join(', ')
 
     // Create the set of widths, ordered the same as the srcSet
-    this.sizeSet = props.imgSet.map(img => {
+    const sizeSet = imgSet.map(img => {
       return `(max-width: ${img.max}px) ${img.width}px`
     }).join(', ')
 
     // NOTE - It's important that the srcSet and sizeSet are in ascending order of width,
     // because the element will use the values from the first detected as true
+    return { srcSet, sizeSet }
   }
 
-  state = { currentSrc: '' };
-
-  onLoad = (event) => {
-    this.setState({
-      currentSrc: event.target.currentSrc
-    });
+  handleImgChange(props) {
+    if (this.state.defaultImg !== props.default) {
+      this.setState({
+        ...this.setImgParams,
+        ...props
+      })
+    }
   }
+
+  state = {}
 
   render() {
+    if (this.props.imgSet !== this.state.imgSet) {
+      this.handleImgChange(this.props)
+    }
     // If a link, wrap the element in an anchor
-    if (this.isImgLink) {
+    if (this.state.isLink) {
       return (
-        <div>
+        <div className={this.props.className} id={this.props.id}>
           <a href={this.props.target}
             alt={this.props.desc}
             rel='noopener noreferrer'
             target='_blank'
             className='fullsize-link'>
             <img alt={this.props.desc}
-              src={this.props.default}
-              srcSet={this.srcSet}
-              sizes={this.sizeSet}
-              onLoad={this.onLoad} />
+              src={this.state.default}
+              srcSet={this.state.srcSet}
+              sizes={this.state.sizeSet} />
           </a>
         </div>
       );
@@ -66,12 +68,11 @@ class ResponsiveImage extends React.Component {
     // If it's not a link, just return the img element itself
     else {
       return (
-        <div>
+        <div className={this.props.className} id={this.props.id}>
           < img alt={this.props.desc}
-            src={this.props.default}
-            srcSet={this.srcSet}
-            sizes={this.sizeSet}
-            onLoad={this.onLoad} />
+            src={this.state.default}
+            srcSet={this.state.srcSet}
+            sizes={this.state.sizeSet} />
         </div>
       )
     }

@@ -30,3 +30,12 @@ export function PageCtxProvider({ children }) {
     <PageCtx.Provider value={ctx}>{children}</PageCtx.Provider>
   )
 }
+
+
+export function withCtx(Page) {
+  return function WrappedComponent(props) {
+    const { checkPage } = React.useContext(PageCtx);
+    React.useEffect(() => { checkPage(); });
+    return <Page {...props} />;
+  }
+}
