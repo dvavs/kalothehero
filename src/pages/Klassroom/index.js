@@ -59,7 +59,7 @@ export default function Klassroom(props) {
                     <Col size='md-6' id='sm-rsrc-left'>
                         <ResponsiveImage
                             desc={dayCount.desc}
-                            default={dayCount.full}
+                            default={dayCount.h960w621}
                             isLink={true}
                             target={dayCount.full}
                             imgSet={dayCount.imgSet}
@@ -68,7 +68,7 @@ export default function Klassroom(props) {
                     <Col size='md-6' id='sm-rsrc-right'>
                         <ResponsiveImage
                             desc={lookFwd.desc}
-                            default={lookFwd.full}
+                            default={lookFwd.h960w621}
                             isLink={true}
                             target={lookFwd.full}
                             imgSet={lookFwd.imgSet}

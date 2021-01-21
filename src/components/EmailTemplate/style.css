@@ -14,3 +14,8 @@
 #copypasta-preview p {
     font-size: 1em;
 }
+
+#btn-copypasta {
+    font-size: 2em;
+    border: none;
+}

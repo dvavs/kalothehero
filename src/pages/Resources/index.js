@@ -87,7 +87,7 @@ export default function Resources(props) {
                     <Col size='md-6' className='sm-rsrc-left'>
                         <ResponsiveImage
                             desc={challengePoster.desc}
-                            default={challengePoster.full}
+                            default={challengePoster.h960w621}
                             isLink={true}
                             target={challengePoster.full}
                             imgSet={challengePoster.imgSet}
@@ -96,7 +96,7 @@ export default function Resources(props) {
                     <Col size='md-6' className='sm-rsrc-right'>
                         <ResponsiveImage
                             desc={vaccPoster.desc}
-                            default={vaccPoster.full}
+                            default={vaccPoster.h960w621}
                             isLink={true}
                             target={vaccPoster.full}
                             imgSet={vaccPoster.imgSet}

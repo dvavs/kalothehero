@@ -14,7 +14,48 @@
     justify-content: left;
 }
 
+#rd-portrait img {
+    margin-top: 70px;
+}
+
 .social-share-icon {
     font-size: 2em;
     padding: 10px
+}
+
+button {
+    font-size: 1em;
+    margin: 0 10px 20px;
+    border: 1px solid var(--primary-db);
+    border-radius: 10px;
+    background: inherit;
+}
+
+#lang-select-btns button:hover {
+    background: var(--primary-lg);
+    color: var(--primary-charcoal);
+}
+
+#lang-select-btns button:active {
+    border: 1px solid var(--primary-charcoal);
+    border-radius: 10px;
+    background: var(--primary-lg);
+}
+
+#lang-select-btns button:focus {
+    border: 1px solid var(--primary-charcoal);
+    border-radius: 10px;
+    background: var(--primary-db);
+    color: var(--primary-lb);
+}
+
+#selected {
+    border: 1px solid var(--primary-charcoal);
+    background: var(--primary-db);
+    color: var(--primary-lb);
+}
+
+#selected:hover {
+    background: var(--primary-lg);
+    color: var(--primary-charcoal);
 }
