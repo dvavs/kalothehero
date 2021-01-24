@@ -16,6 +16,7 @@ import {
 import './style.css'
 
 import lookFwd from '../../assets/files/kalo-activity-look-fwd'
+import lookFwdAr from '../../assets/files/kalo-activity-look-fwd-ar'
 import tgPortrait from '../../assets/images/contest/grandin'
 import rdPortrait from '../../assets/images/contest/dajani'
 import kaloPortrait from '../../assets/images/contest/kalo'
@@ -25,7 +26,7 @@ import kaloPortrait from '../../assets/images/contest/kalo'
 class Contest extends React.Component {
 
     state = {
-        lang: this.props.i18n.language ==='ar' ? 'ar' : 'en',
+        lang: this.props.i18n.language === 'ar' ? 'ar' : 'en',
         t: this.props.t,
         i18n: this.props.i18n
     };
@@ -93,13 +94,22 @@ class Contest extends React.Component {
                     <Row id='contest-desc-media-top'>
                         <Col size='md-2' className='desc-media-lg-buffer' />
                         <Col size='md-8' id='desc-media-lg'>
-                            <ResponsiveImage
-                                desc={lookFwd.desc}
-                                default={lookFwd.h960w621}
-                                isLink={true}
-                                target={lookFwd.full}
-                                imgSet={lookFwd.imgSet}
-                            />
+                            {this.state.lang === 'en' ?
+                                <ResponsiveImage
+                                    desc={lookFwd.desc}
+                                    default={lookFwd.h960w621}
+                                    isLink={true}
+                                    target={lookFwd.full}
+                                    imgSet={lookFwd.imgSet}
+                                />
+                                :
+                                <ResponsiveImage
+                                    desc={lookFwdAr.desc}
+                                    default={lookFwdAr.h960w621}
+                                    isLink={true}
+                                    target={lookFwdAr.full}
+                                    imgSet={lookFwdAr.imgSet}
+                                />}
                             <sub id='rsrc-sub'>{this.state.t('Click the thumbnail above for full-size.')}</sub>
                         </Col>
                         <Col size='md-2' className='desc-media-lg-buffer' />
@@ -194,7 +204,7 @@ class Contest extends React.Component {
                         <Col size='12'>
                             <p>
                                 {this.state.t('Questions related to the contest should be directed to')}
-                            <br />
+                                <br />
                                 <a href='mailto:contest@kalothehero.com'>contest@kalothehero.com</a>
                             </p>
                         </Col>
