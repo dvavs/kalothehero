@@ -18,7 +18,7 @@ i18n.use(LanguageDetector).init({
 
                 'There are two age groups - 6-8 years old and 9-11 years old.': 'There are two age groups - 6-8 years old and 9-11 years old.',
 
-                'Send us your ideas by Februay 5!': 'Send us your ideas by Februay 5!',
+                'Send us your ideas by Februay 26!': 'Send us your ideas by Februay 26!',
 
                 'How do you enter the contest? You may need a grown-up to help.': 'How do you enter the contest? You may need a grown-up to help.',
 
@@ -77,7 +77,7 @@ i18n.use(LanguageDetector).init({
 
                 'There are two age groups - 6-8 years old and 9-11 years old.': 'يوجد فئتين عمرية: ٦-٨ سنوات و٩-١١ سنة',
 
-                'Send us your ideas by Februay 5!': 'أرسلوا اعمالكم قبل ١٥ شباط/فبراير!',
+                'Send us your ideas by Februay 26!': 'أرسلوا اعمالكم قبل ١٥ شباط/فبراير!',
 
                 'How do you enter the contest? You may need a grown-up to help.': 'كيفية المشاركة بالمسابقة (يمكنكم الاستعانة بأحد البالغين للمساعدة)',
 

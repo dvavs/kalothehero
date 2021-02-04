@@ -86,7 +86,7 @@ class Contest extends React.Component {
                                 {this.state.t('There are two age groups - 6-8 years old and 9-11 years old.')}
                             </p>
                             <p>
-                                <b>{this.state.t('Send us your ideas by Februay 5!')}</b>
+                                <b>{this.state.t('Send us your ideas by Februay 26!')}</b>
                             </p>
                         </Col>
                     </Row>
