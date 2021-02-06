@@ -19,7 +19,7 @@ class EmailTemplate extends React.Component {
         const { t, i18n } = this.props;
 
         return (
-            <div id='email-template'>
+            <div className={this.props.lang === 'ar' ? 'ar-txt' : 'en-txt'} id='email-template'>
                 <CopyToClipboard text={this.state.lang === 'en' ? enCopyTxt : arCopyTxt}
                     onCopy={() => this.setState({ copied: true })}>
                     <button id='btn-copypasta'><i className={this.state.copied ? 'fas fa-copy' : 'far fa-copy'} /></button>

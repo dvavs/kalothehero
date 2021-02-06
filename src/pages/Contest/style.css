@@ -59,3 +59,11 @@ button {
     background: var(--primary-lg);
     color: var(--primary-charcoal);
 }
+
+.ar-txt p {
+    text-align: right;
+}
+
+.en-txt p {
+    text-align: left;
+}
