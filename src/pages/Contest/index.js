@@ -152,7 +152,7 @@ class Contest extends React.Component {
                     <Row>
                         <Col size='12' id='contest-instructs'>
                             <p><b>{this.state.t('How do you enter the contest? You may need a grown-up to help.')}</b></p>
-                            <section id='instruct-steps'>
+                            <section className={this.state.lang === 'ar' ? 'ar-txt' : 'en-txt'} id='instruct-steps'>
                                 <p>
                                     {this.state.t('1. Print the cartoon page and draw a picture, or write a poem in the thought bubble to share your plans.')}
                                 </p>
