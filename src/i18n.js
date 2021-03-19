@@ -77,7 +77,7 @@ i18n.use(LanguageDetector).init({
 
                 'There are two age groups - 6-8 years old and 9-11 years old.': 'يوجد فئتين عمرية: ٦-٨ سنوات و٩-١١ سنة',
 
-                'Send us your ideas by Februay 26!': 'اخر موعد لارسال افكاركم ٢٦ شباط ',
+                'Send us your ideas by Februay 26!': 'الموعد النهائي لإرسال أفكارك هو ١ مايو ',
 
                 'How do you enter the contest? You may need a grown-up to help.': 'كيفية المشاركة بالمسابقة (يمكنكم الاستعانة بأحد البالغين للمساعدة)',
 
