@@ -13,7 +13,7 @@ export default function Footer(props) {
                         &#169;2020 <a href='https://www.kellylambertlab.com/'>Kelly Lambert</a>. All Rights Reserved.
                     </p>
                     <p>
-                        <span id='km-tag'>Illustrations & resources: <a href='/'>Katie McBride</a></span><span id='tag-pipe'> | </span><span id='dv-tag'>Website designer: <a href='http://dylanvavra.com' className='foot-center-block'>Dylan Vavra</a></span>
+                        <span id='km-tag'>Illustrations & resources: <a href='/'>Katie McBride</a></span><span id='tag-pipe'> | </span><span id='dv-tag'>Website designer: <a href='https://www.linkedin.com/in/vavrad' className='foot-center-block'>Dylan Vavra</a></span>
                     </p>
                 </div>
             </div>

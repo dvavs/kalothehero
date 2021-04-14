@@ -17,6 +17,11 @@ export default function Media(props) {
     return (
         <main id='media'>
             <h1>Media Highlights</h1>
+            <EmbeddedVideo
+                vidUrl='https://www.youtube.com/embed/MrBx4qyO7DM'
+                title='Kalo Contest Award Announcement - YouTube'
+            />
+            <hr className='media-buffer' />
             <MediaMention
                 url='https://www.scientificamerican.com/article/can-a-cartoon-raccoon-keep-schoolkids-safe-from-covid-19/'
                 title="Professor creates cartoon character to encourage kids' safety during pandemic"
