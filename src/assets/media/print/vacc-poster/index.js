@@ -5,12 +5,12 @@ module.exports = {
     desc: 'Kalo vaccine poster',
     imgSet: [
         {
-            imgSrc: require('./poster-thumbs/vacc-poster_480.jpg'),
+            imgSrc: this.h480w349,
             width: 349,
             max: 720
         },
         {
-            imgSrc: require('./poster-thumbs/vacc-poster_480.jpg'),
+            imgSrc: this.h960w621,
             width: 621,
             max: 1440
         }
