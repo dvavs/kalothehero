@@ -6,6 +6,7 @@ import EmbeddedVideo from '../../components/EmbeddedVid'
 
 import sciAmScreenshot from '../../assets/images/scientific-american.jpg'
 import urNow_9_7_20 from '../../assets/images/URNow_9-7-20.png'
+import kalo_wapo from '../../assets/images/kalo_wapo.png'
 
 import './style.css'
 
@@ -17,6 +18,14 @@ export default function Media(props) {
     return (
         <main id='media'>
             <h1>Media Highlights</h1>
+            <MediaMention
+                url='https://www.washingtonpost.com/health/covid-mascot-kids-vaccination/2021/11/12/e484df08-3cc0-11ec-8ee9-4f14a26749d1_story.html'
+                title='Could Kalo become the Smokey Bear-type mascot for pandemic hygiene?'
+                outlet='Washington Post'
+                author='Katherine Ellison'
+                publishDate='11/13/2021'
+                screenshot={kalo_wapo}
+            />
             <EmbeddedVideo
                 vidUrl='https://www.youtube.com/embed/MrBx4qyO7DM'
                 title='Kalo Contest Award Announcement - YouTube'

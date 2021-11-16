@@ -9,6 +9,7 @@ import './style.css'
 
 const challengePoster = require('../../assets/media/print/challenge-poster')
 const vaccPoster = require('../../assets/media/print/vacc-poster')
+const weCanDoItPoster = require('../../assets/media/print/kalo-we-can-do-it')
 
 const social = require('../../assets/media/social')
 
@@ -83,7 +84,7 @@ export default function Resources(props) {
                         <h3>Printable Posters</h3>
                     </Col>
                 </Row>
-                <Row id='lg-poster-row'>
+                <Row id='lg-poster-row-1' className='lg-poster-row'>
                     <Col size='md-6' className='sm-rsrc-left'>
                         <ResponsiveImage
                             desc={challengePoster.desc}
@@ -100,6 +101,17 @@ export default function Resources(props) {
                             isLink={true}
                             target={vaccPoster.full}
                             imgSet={vaccPoster.imgSet}
+                        />
+                    </Col>
+                </Row>
+                <Row id='lg-poster-row-2' className='lg-poster-row'>
+                <Col size='12'>
+                        <ResponsiveImage
+                            desc={weCanDoItPoster.desc}
+                            default={weCanDoItPoster.h960w621}
+                            isLink={true}
+                            target={weCanDoItPoster.full}
+                            imgSet={weCanDoItPoster.imgSet}
                         />
                     </Col>
                 </Row>
